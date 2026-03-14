@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Cental - Car Rent Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+       <!-- Topbar Start -->
+    <div class="container-fluid topbar-bg p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+
+        <div class="col-lg-7 px-5 text-start">
+
+            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                <small class="fa fa-map-marker-alt topbar-icon me-2"></small>
+                <small class="topbar-text">Dar es Salaam, Tanzania</small>
+            </div>
+
+            <div class="h-100 d-inline-flex align-items-center py-3">
+                <small class="far fa-clock topbar-icon me-2"></small>
+                <small class="topbar-text">Mon - Sat : 08:00 AM - 07:00 PM</small>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 px-5 text-end">
+
+            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                <small class="fa fa-phone-alt topbar-icon me-2"></small>
+                <small class="topbar-text">+255 672 450 051</small>
+            </div>
+
+            <div class="h-100 d-inline-flex align-items-center">
+
+                <a class="social-btn me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-btn me-1" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="social-btn me-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-btn" href="#"><i class="fab fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+           <a href="index.html" class="navbar-brand">
+           <img src="img/logo.png" alt="AWEKA GROUP LIMITED Logo" class="navbar-logo">
+        </a>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="team.html" class="nav-item nav-link">Our Fleet</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="btn-root d-none d-lg-inline-flex">
+            Request a Quote </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">Car Servicing </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"> Reliable Car Hire Solutions by AWEKA GROUP LIMITED</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More</a>
+                                        <a href="#" class="btn btn-secondary py-3 px-5 animated slideInDown" data-bs-toggle="modal" data-bs-target="#quoteModal">Request Quote</a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <!-- <img class="img-fluid" src="img/carousel-1.png" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">Car Servicing </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"> Safe, Reliable & Professional Transport</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More</a>
+                                        <a href="#" class="btn btn-secondary py-3 px-5 animated slideInDown" data-bs-toggle="modal" data-bs-target="#quoteModal">Request Quote</a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <!-- <img class="img-fluid" src="img/carousel-2.png" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Quote Modal -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form id="quoteForm" action="send_email.php" method="POST">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="company" placeholder="Company Name">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="location" placeholder="Location">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" rows="4" placeholder="Your Requirements" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary">Send Request</button>
+         
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+        <!-- About Start -->
+ <div class="container-fluid overflow-hidden about py-5">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- Left Column -->
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-item">
+
+                    <div class="pb-5">
+                        <h1 class="display-5 text-capitalize">Central <span>About</span></h1>
+                        <p class="mb-0">
+                            AWEKA GROUP LIMITED, based in Dar es Salaam, Tanzania, is a professionally managed car hire and car rental company delivering reliable, efficient, and professional transport solutions to corporate clients, NGOs, institutions, and private individuals. We provide more than vehicles; we offer seamless mobility solutions designed to meet the diverse needs of organizations operating in both urban and remote areas.
+                        </p>
+                    </div>
+
+                    <!-- Vision & Mission -->
+                    <div class="row g-4 align-items-stretch">
+
+                        <!-- Vision -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="about-item-inner border p-4 h-100 w-100">
+                                <div class="about-icon mb-4">
+                                    <img src="img/about-icon-1.png" class="img-fluid w-50 h-50" alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Our Vision</h5>
+                                <p class="mb-0">
+                                    To be the most trusted transport partner in Tanzania for NGOs, corporate organizations, and private clients, recognized for excellence, professionalism, and innovative mobility solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Mission -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="about-item-inner border p-4 h-100 w-100">
+                                <div class="about-icon mb-4">
+                                    <img src="img/about-icon-2.png" class="img-fluid h-50 w-50" alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Our Mission</h5>
+                                <p class="mb-0">
+                                    To provide safe, reliable, and efficient transport through a modern fleet, professional service, and strong client commitment.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Core Values -->
+                    <p class="text-item my-4">
+                        Core Values:
+                        <br>Integrity: Doing what’s right, every time.
+                        <br>Quality: Excellence in every detail.
+                        <br>Professionalism: Ensuring quality service and customer satisfaction.
+                        <br>Safety: Protecting lives and property.
+                        <br>Client Focus: Listening, understanding, and delivering beyond expectations.
+                    </p>
+
+                    <div class="row g-4">
+
+                        <div class="col-lg-7">
+                            <div class="rounded">
+                                <p class="mb-2"><i class="fa fa-check-circle me-1"></i> Safe and reliable transport</p>
+                                <p class="mb-2"><i class="fa fa-check-circle me-1"></i> Professional drivers</p>
+                                <p class="mb-2"><i class="fa fa-check-circle me-1"></i> Corporate & NGO services</p>
+                                <p class="mb-0"><i class="fa fa-check-circle me-1"></i> Flexible mobility solutions</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <a href="about.html" class="btn btn-primary rounded py-3 px-5">More About Us</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Column Images -->
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="about-img">
+                    <div class="img-1">
+                        <img src="img/about-img.jpg" class="img-fluid rounded h-100 w-100" alt="">
+                    </div>
+                    <div class="img-2">
+                        <img src="img/cars/car (16).jpeg" class="img-fluid rounded w-100" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        <!-- About End -->
+
+        <!-- Car categories Start -->
+        <div class="container-fluid categories py-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h1 class="display-5 text-capitalize mb-3">Our <span>Vehicles</span></h1>
+            <p class="mb-0">
+            Choose from our fleet of modern, safe, and reliable cars for your transport needs in Tanzania. 
+            Whether it’s corporate travel, NGO field trips, airport transfers, or private excursions, 
+            our vehicles ensure comfort, punctuality, and peace of mind for every journey.
+            </p>
+        </div>
+        <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+
+            <!-- Vehicle 1 -->
+            <div class="categories-item p-4">
+                <div class="categories-item-inner">
+                    <div class="categories-img rounded-top">
+                        <img src="img/cars/Alphard.jpg" class="img-fluid w-100 rounded-top" alt="Alphard">
+                    </div>
+                    <div class="categories-content rounded-bottom p-4">
+                        <h4>Alphard</h4>
+                        <p>Luxury MPV ideal for corporate travel and comfortable group rides.</p>
+                        <a href="#contact" class="btn btn-primary  d-flex justify-content-center py-3">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 2 -->
+            <div class="categories-item p-4">
+                <div class="categories-item-inner">
+                    <div class="categories-img rounded-top">
+                        <img src="img/cars/noah (1).jpg" class="img-fluid w-100 rounded-top" alt="Noah">
+                    </div>
+                    <div class="categories-content rounded-bottom p-4">
+                        <h4>Noah</h4>
+                        <p>Spacious family van suitable for NGO field trips and group travel.</p>
+                        <a href="#contact" class="btn btn-primary  d-flex justify-content-center py-3">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 3 -->
+            <div class="categories-item p-4">
+                <div class="categories-item-inner">
+                    <div class="categories-img rounded-top">
+                        <img src="img/cars/crown.jpg" class="img-fluid w-100 rounded-top" alt="Crown">
+                    </div>
+                    <div class="categories-content rounded-bottom p-4">
+                        <h4>Crown</h4>
+                        <p>Premium sedan perfect for executive transport and VIP clients.</p>
+                        <a href="#contact" class="btn btn-primary d-flex justify-content-center py-3">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 4 -->
+            <div class="categories-item p-4">
+                <div class="categories-item-inner">
+                    <div class="categories-img rounded-top">
+                        <img src="img/cars/prado.jpg" class="img-fluid w-100 rounded-top" alt="Prado">
+                    </div>
+                    <div class="categories-content rounded-bottom p-4">
+                        <h4>Prado</h4>
+                        <p>Reliable SUV designed for rough terrain, field trips, and long journeys.</p>
+                        <a href="#contact" class="btn btn-primary d-flex justify-content-center py-3">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 5 -->
+            <div class="categories-item p-4">
+                <div class="categories-item-inner">
+                    <div class="categories-img rounded-top">
+                        <img src="img/cars/hilux.jpg" class="img-fluid w-100 rounded-top" alt="Hilux">
+                    </div>
+                    <div class="categories-content rounded-bottom p-4">
+                        <h4>Hilux</h4>
+                        <p>Durable pickup truck perfect for cargo transport and off-road travel.</p>
+                        <a href="#contact" class="btn btn-primary d-flex justify-content-center py-3">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        <!-- Car categories End -->
+
+
+
+        <!-- Services Start -->
+<div class="container-fluid services py-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h1 class="display-5 text-capitalize mb-3">Our <span>Services</span></h1>
+            <p class="mb-0">
+                AWEKA GROUP LIMITED provides reliable, efficient, and professional transport solutions for businesses, NGOs, organizations, and private clients across Tanzania.
+            </p>
+        </div>
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (30).jpeg" class="img-fluid rounded-top w-100" alt="Airport Pickup & Dropoff">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Airport Pickup & Dropoff</h4>
+                        <p>Reliable, timely, and stress-free transfers to and from airports, ensuring smooth arrivals and departures.</p>
+                        <a href="#contact" class="btn btn-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (26).jpeg" class="img-fluid rounded-top w-100" alt="SGR Pickup & Dropoff">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>SGR Pickup & Dropoff</h4>
+                        <p>Seamless connectivity to Standard Gauge Railway (SGR) stations for intercity travel and field assignments.</p>
+                        <a href="#contact" class="btn btn-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (15).jpeg" class="img-fluid rounded-top w-100" alt="Hotel Transfers">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Hotel Transfers</h4>
+                        <p>Coordinated transfers between hotels, offices, and project sites for efficiency and comfort.</p>
+                        <a href="#contact" class="btn btn-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (9).jpeg" class="img-fluid rounded-top w-100" alt="Rapid City Transfers">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Rapid City Transfers</h4>
+                        <p>Flexible and dependable city transport for meetings, workshops, and daily organizational activities.</p>
+                        <a href="#contact" class="btn btn mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (14).jpeg" class="img-fluid rounded-top w-100" alt="VIP & Corporate Transport">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>VIP & Corporate Transport</h4>
+                        <p>Professional travel solutions for senior staff, consultants, and dignitaries, ensuring comfort and discretion.</p>
+                        <a href="#contact" class="btn btn mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (25).jpeg" class="img-fluid rounded-top w-100" alt="Meet & Greet Services">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Meet & Greet Services</h4>
+                        <p>Personalized reception at airports, SGR stations, or project sites for staff, visitors, and partners.</p>
+                        <a href="#contact" class="btn btn mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (28).jpeg" class="img-fluid rounded-top w-100" alt="Hotel Check-in/Check-out Assistance">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Hotel Check-in/Check-out Assistance</h4>
+                        <p>Assistance with hotel procedures to save time and reduce logistical challenges for staff and partners.</p>
+                        <a href="#contact" class="btn btn mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (19).jpeg" class="img-fluid rounded-top w-100" alt="Upcountry Transport">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Upcountry Transport</h4>
+                        <p>Safe, reliable, long-distance travel for project sites, field visits, and inter-regional operations.</p>
+                        <a href="#contact" class="btn btn mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 9 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (3).jpeg" class="img-fluid rounded-top w-100" alt="Wedding & Event Transport">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Wedding & Event Transport</h4>
+                        <p>Organized and stylish transport for events, workshops, conferences, and community engagements.</p>
+                        <a href="#contact" class="btn btn mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 10 -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/cars/car (5).jpeg" class="img-fluid rounded-top w-100" alt="Funeral Transport">
+                    </div>
+                    <div class="service-content rounded-bottom p-4">
+                        <h4>Funeral Transport</h4>
+                        <p>Respectful and dependable transport for sensitive occasions, delivered with professionalism.</p>
+                        <a href="#contact" class="btn btn-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+      
+<!-- Why Choose Aweka Start -->
+<section class="why-aweka py-5">
+    <div class="container">
+
+      <!-- Section Header -->
+<div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="display-5 mb-3">Why Choose <span>AWEKA GROUP</span></h1>
+    <p>
+        We provide dependable, professional, and efficient transport solutions designed 
+        to support organizations, NGOs, and private clients across Tanzania.
+    </p>
+</div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-car"></i></div>
+                    <h5>Modern Fleet</h5>
+                    <p>Modern and well-maintained vehicles ensuring comfort, reliability, and safety.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-user-tie"></i></div>
+                    <h5>Professional Drivers</h5>
+                    <p>Experienced drivers familiar with NGO operations and field assignments.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-clock"></i></div>
+                    <h5>Punctual Service</h5>
+                    <p>Reliable and punctual transport services for meetings, airport transfers, and field visits.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-wifi"></i></div>
+                    <h5>Onboard Wi-Fi</h5>
+                    <p>Complimentary Wi-Fi to help you stay connected during travel.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-coffee"></i></div>
+                    <h5>Refreshments</h5>
+                    <p>Light refreshments provided to enhance passenger comfort during trips.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-route"></i></div>
+                    <h5>Flexible Solutions</h5>
+                    <p>Customized transport solutions for urban travel and field operations.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-shield-alt"></i></div>
+                    <h5>Safety First</h5>
+                    <p>Strong commitment to safety, professionalism, and customer satisfaction.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa fa-hand-holding-usd"></i></div>
+                    <h5>Transparent Pricing</h5>
+                    <p>Competitive pricing with clear and transparent service packages.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Why Choose Aweka End -->
+
+
+<!-- Premium Contact Section Start -->
+<section class="contact-premium py-5">
+    <div class="container">
+        <!-- Outer border wrapper -->
+        <div class="contact-wrapper rounded shadow-sm d-flex flex-column flex-lg-row overflow-hidden">
+
+            <!-- Contact Info -->
+            <div class="contact-info p-4 bg-gradient flex-fill">
+                <h3 class="mb-4">Get in Touch</h3>
+                <p>Reach out to AWEKA GROUP LIMITED for inquiries, bookings, or more information. We provide professional transport solutions tailored to your needs.</p>
+
+                <ul class="list-unstyled mt-4 contact-list">
+                    <li>
+                        <span class="icon-circle"><i class="fa fa-map-marker-alt"></i></span>
+                        House No 34, University Road, Survei, Dar es Salaam
+                    </li>
+                    <li>
+                        <span class="icon-circle"><i class="fa fa-phone"></i></span>
+                        +255 672 450 551
+                    </li>
+                    <li>
+                        <span class="icon-circle"><i class="fa fa-envelope"></i></span>
+                        info@awekagroupltd.co.tz
+                    </li>
+                </ul>
+
+                <div class="social-links mt-4">
+                    <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form flex-fill p-4 bg-white">
+                <h3 class="mb-4">Send Us a Message</h3>
+                <form action="send_email.php" method="POST">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="company" class="form-control" placeholder="Company Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="location" class="form-control" placeholder="Location">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn rounded-pill px-5 py-2">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Premium Contact Section End -->
+<!-- Modern Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- Column 1: Contact Info / Working -->
+            <div class="col-md-6 col-lg-3">
+                <h5 class="footer-title mb-3">Contact Info</h5>
+                <ul class="footer-contact list-unstyled">
+                    <li><span class="footer-icon"><i class="fa fa-map-marker-alt"></i></span>Dar es Salaam, Tanzania</li>
+                    <li><span class="footer-icon"><i class="fa fa-phone"></i></span> +255 672 450 551</li>
+                    <li><span class="footer-icon"><i class="fas fa-envelope"></i></span> info@awekagroupltd.co.tz</li>
+                </ul>
+                <div class="footer-social mt-3">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Services -->
+            <div class="col-md-6 col-lg-3">
+                <h5 class="footer-title mb-3">Services</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Airport Pickup & Dropoff</a></li>
+                    <li><a href="#">SGR Pickup & Dropoff</a></li>
+                    <li><a href="#">Hotel Transfers</a></li>
+                    <li><a href="#">VIP & Corporate Transport</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Company -->
+            <div class="col-md-6 col-lg-3">
+                <h5 class="footer-title mb-3">Company</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Fleet</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="col-md-6 col-lg-3">
+                <h5 class="footer-title mb-3">Stay Updated</h5>
+                <p>Subscribe to our newsletter for latest updates.</p>
+                <div class="position-relative">
+                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                    <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="footer-bottom mt-5 pt-3 border-top text-center">
+            <span>&copy; 2026 AWEKA GROUP LIMITED. All rights reserved.</span>
+        </div>
+    </div>
+</div>
+<!-- Modern Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/lib/wow/wow.min.js"></script>
+    <script src="lib/lib/easing/easing.min.js"></script>
+    <script src="lib/lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/js/main.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    const message = urlParams.get('message');
+
+    if(status === 'success') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Message Sent!',
+            text: 'Thank you! Your message has been sent.',
+            confirmButtonText: 'OK'
+        });
+        // Remove URL parameter after showing message
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+
+    if(status === 'error') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Message could not be sent. ' + message,
+            confirmButtonText: 'OK'
+        });
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+});
+</script>
+    </body>
+
+</html>
