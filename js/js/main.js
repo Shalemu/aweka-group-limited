@@ -58,6 +58,30 @@
         }
     });
 
+    // Smooth scroll for navbar links
+$('.navbar-nav a, .btn-root').on('click', function (e) {
+    if (this.hash !== "") {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 70 // adjust offset for sticky navbar
+        }, 1000, 'easeInOutExpo');
+    }
+});
+
+// Highlight navbar links on scroll
+$(window).on('scroll', function () {
+    var scrollPos = $(document).scrollTop() + 80; // offset for navbar height
+    $('.navbar-nav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.navbar-nav a').removeClass("active");
+            currLink.addClass("active");
+        }
+    });
+});
+
 
    // Back to top button
    $(window).scroll(function () {

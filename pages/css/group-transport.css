@@ -1,4 +1,3 @@
-
 :root{
     --primary-color:#c3b27a;
     --dark:#1f2937;
@@ -12,6 +11,7 @@
     --bg-secondary: #1a3d53;      /* For price or stat backgrounds */
   
 }
+
 /* HEADER WITH BACKGROUND IMAGE */
 .header-bg {
     position: relative;
@@ -102,7 +102,7 @@
     font-size:36px;
     font-weight:700;
     margin:15px 0 20px;
-    color:var(--secondary-color);
+    color:var(--bs-dark);
 }
 
 .intro-content p{
@@ -217,6 +217,24 @@
     margin-right:8px;
 }
 
+/* Add subtle premium feel */
+.vm-card{
+    border-radius: 1px;
+  
+  
+}
+
+/* Icon enhancement */
+.vm-icon{
+    background: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* Title refinement */
+.section-title{
+    color: var(--bs-dark);
+    letter-spacing: -0.5px;
+}
+
 /* Responsive */
 @media(max-width:991px){
 
@@ -232,94 +250,59 @@
 
 
 
-/* ================================
-   SERVICES & FLEET SECTION
-================================ */
-.services-fleet-section {
+.cta-section {
     padding: 80px 0;
-    background: #f6f8fb;
 }
 
-/* CARD */
-.sf-card {
-    border-radius: 16px;
+.cta-card {
+    background: linear-gradient(135deg, var(--secondary-color), var(--dark));
+    border-radius: 20px;
+    padding: 60px 30px;
+    color: var(--bs-light);
+    position: relative;
     overflow: hidden;
-    /* background: #fff;
-    box-shadow: 0 25px 70px rgba(0,0,0,0.08); */
 }
 
-/* ROWS */
-.sf-row {
-    align-items: stretch;
-}
-
-/* CONTENT */
-.sf-content {
-    padding: 60px;
-}
-
-.section-title {
-    font-size: 34px;
+.cta-title {
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: var(--bs-light);
 }
 
-.sf-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
+.cta-text {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: var(--bs-light);
+    opacity: 0.9;
 }
 
-.sf-list li {
-    margin-bottom: 12px;
-    font-size: 16px;
-    line-height: 1.6;
+.cta-buttons .btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 500;
 }
 
-.sf-list i {
+/* Primary button stays from Bootstrap root */
+.cta-buttons .btn-primary {
+    background: var(--bs-light);
     color: var(--secondary-color);
-    margin-right: 12px;
+    border: none;
+
 }
 
-/* IMAGE */
-.sf-image {
-    height: 100%;
-    overflow: hidden;
-}
-
-.sf-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.sf-image:hover img {
-    transform: scale(1.05);
-}
-
-/* DIVIDER */
-.sf-divider {
-    width: 80%;
-    height: 0.1px;
+.cta-buttons .btn-primary:hover {
     background: var(--primary-color);
-    margin: 60px auto;
-    border-radius: 2px;
+    color: var(--bs-light);
 }
 
-/* RESPONSIVE */
-@media(max-width:991px){
-    .sf-content {
-        padding: 40px;
-    }
-
-    .sf-image {
-        height: 300px;
-        margin-bottom: 30px;
-    }
+/* Outline button */
+.btn-outline-light {
+    border: 1px solid var(--bs-light);
+    color: var(--bs-light);
 }
 
-/* ANIMATIONS */
-.wow {
-    visibility: hidden;
+.btn-outline-light:hover {
+    background: var(--bs-light);
+    color: var(--secondary-color);
 }
