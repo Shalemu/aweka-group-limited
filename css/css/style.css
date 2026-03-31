@@ -405,6 +405,18 @@
 .about h5 {
     color: var(--primary-color);
 }
+
+.custom-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
 /*** About End ***/
 
 /*** Cars Categories Start ***/

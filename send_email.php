@@ -8,6 +8,7 @@ require 'PHPMailer/src/SMTP.php';
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
     $email = htmlspecialchars($_POST['email']);
     $company = htmlspecialchars($_POST['company']);
     $location = htmlspecialchars($_POST['location']);
@@ -30,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->isHTML(false);
         $mail->Subject = 'New Contact Form Submission';
-        $mail->Body    = "Full Name: $name\nEmail: $email\nCompany: $company\nLocation: $location\nMessage: $message";
+        $mail->Body    = "Full Name: $name\nphone:$phone\nEmail: $email\nCompany: $company\nLocation: $location\nMessage: $message";
 
         $mail->send();
 
