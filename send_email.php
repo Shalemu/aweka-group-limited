@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         $mail->isSMTP();
-        $mail->Host       = 'mail.awekagroupltd.co.tz';
+        $mail->Host       = 'tegahost.co.tz';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'info@awekagroupltd.co.tz';
         $mail->Password   = 'Tanzania@@@2026';
